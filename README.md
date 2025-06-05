@@ -255,4 +255,4 @@ vercel --prod
 
 ---
 
-Designed and developed with ❤️ by Shubham Das
+Designed and developed ❤️ by Shubham Das
