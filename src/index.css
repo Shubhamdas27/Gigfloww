@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200 dark:bg-gray-900 text-sm sm:text-base;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply dark:text-gray-100 font-medium;
+  }
+
+  h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h2 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+
+  p, span {
+    @apply dark:text-gray-200;
+  }
+  
+  div {
+    @apply dark:bg-gray-800 dark:text-gray-200;
+  }
+
+  code, pre {
+    @apply dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 transition-colors duration-200;
+  }
+  
+  pre {
+    @apply dark:bg-gray-900 p-4 rounded-lg overflow-x-auto border dark:border-gray-700;
+  }
+  
+  /* Syntax highlighting for dark mode */
+  .dark pre, .dark code {
+    @apply bg-gray-900 text-gray-200;
+  }
+  
+  .dark pre {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Syntax highlight tokens in dark mode */
+  .dark .token.comment,
+  .dark .token.prolog,
+  .dark .token.doctype,
+  .dark .token.cdata {
+    @apply text-gray-300;
+  }
+  
+  .dark .token.punctuation {
+    @apply text-gray-200;
+  }
+  
+  .dark .token.property,
+  .dark .token.tag,
+  .dark .token.boolean,
+  .dark .token.number,
+  .dark .token.constant,
+  .dark .token.symbol {
+    @apply text-blue-200;
+  }
+  
+  .dark .token.selector,
+  .dark .token.attr-name,
+  .dark .token.string,
+  .dark .token.char,
+  .dark .token.builtin {
+    @apply text-green-200;
+  }
+  
+  .dark .token.operator,
+  .dark .token.entity,
+  .dark .token.url,
+  .dark .token.variable {
+    @apply text-yellow-100;
+  }
+  
+  .dark .token.atrule,
+  .dark .token.attr-value,
+  .dark .token.keyword {
+    @apply text-purple-200;
+  }
+  
+  .dark .token.function,
+  .dark .token.class-name {
+    @apply text-pink-200;
+  }
+
+  input, select, textarea {
+    @apply dark:bg-gray-900 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-400;
+  }
+
+  button {
+    @apply transition-colors duration-200 dark:text-gray-200;
+  }
+  
+  a {
+    @apply dark:text-blue-200 hover:dark:text-blue-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-900 rounded-xl shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 text-white px-4 py-2 rounded-md;
+  }
+}
